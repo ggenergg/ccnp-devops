@@ -4,11 +4,11 @@
 # Ephone 1 Mac Add  = ccd8.c1fa.ee43
 # Ephone 2 Mac Add  = 8478.aced.5889
 #
-#- name: "Day 1 Config: CUCM"
-#  hosts: cucm
-#  gather_facts: no
-#  become: yes
-#  tasks:
+- name: "Day 1 Config: CUCM"
+  hosts: cucm
+  gather_facts: no
+  become: yes
+  tasks:
     - name: "Configuring Console Access"
       ios_command: 
         commands:
